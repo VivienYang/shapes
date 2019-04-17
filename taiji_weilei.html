@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>太极</title>
+    <style>
+        body{
+            background: #666666;
+        }
+        .taiji{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(to bottom, #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%);
+            position: relative;
+            /* border: 1px solid red; */
+        }
+        .taiji::before{
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position:absolute;
+            left: 0px;
+            top: 50px;
+            background: #ffffff;
+            border: 40px solid #000000;
+        }
+        .taiji::after{
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position:absolute;
+            right: 0px;
+            top: 50px;
+            background: #000000;
+            border: 40px solid #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="taiji">
+        
+    </div>
+    <!-- 
+        把div里面的用子元素用伪类::before和::after替换
+        但是因为伪类里面不能嵌套伪类，
+        所以用一个很宽的border来实现 
+    -->
+</body>
+</html>
